@@ -1,1 +1,1 @@
-"web: gunicorn electroplating_site.wsgi" 
+web: gunicorn electroplating_site.wsgi 
