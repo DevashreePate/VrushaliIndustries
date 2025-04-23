@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thank You</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      background: linear-gradient(to right, #004466, #66ccff);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: white;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .thank-you-container {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 40px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(10px);
+      animation: slideIn 0.6s ease;
+    }
+
+    .thank-you-container h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .thank-you-container p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .thank-you-container a {
+      display: inline-block;
+      padding: 10px 25px;
+      background-color: white;
+      color: #004466;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .thank-you-container a:hover {
+      background-color: #e0f7fa;
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="thank-you-container">
+    <h1>Thank You for Contacting Us!</h1>
+    <p>We appreciate your message. Our team will get back to you shortly.</p>
+    <a href="{% url 'home' %}" class="back-home-btn">Back to Home</a>
+  </div>
+</body>
+</html>

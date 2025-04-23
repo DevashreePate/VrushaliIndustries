@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>Welcome to Vrushali Industries</h1>
+    <p>Your trusted partner in precision electroplating services</p>
+  </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="why-choose-us">
+  <h2>Why Choose Us?</h2>
+  <div class="features">
+    <div class="feature">
+      <h3>Certified Excellence</h3>
+      <p>ISO certified and recognized for quality assurance practices.</p>
+    </div>
+    <div class="feature">
+      <h3>Skilled Team</h3>
+      <p>Professionals with over 10+ years of experience in the industry.</p>
+    </div>
+    <div class="feature">
+      <h3>High-Quality Plating</h3>
+      <p>Delivering top-notch zinc and vat plating with precision and consistency.</p>
+    </div>
+    <div class="feature">
+      <h3>Trusted by Leaders</h3>
+      <p>Proudly serving major clients like Bajaj Auto and Kirloskar Filter.</p>
+    </div>
+    <div class="feature">
+      <h3>Fast Turnaround</h3>
+      <p>On-time project completion with robust support and logistics.</p>
+    </div>
+    <div class="feature">
+      <h3>State-of-the-Art Facilities</h3>
+      <p>Equipped with modern machinery for efficient plating solutions.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Industries We Serve -->
+<section class="industries" id="industries">
+  <h2>Industries We Serve</h2>
+  <div class="industry-tags">
+    <div class="industry-tag">Motor Vehicle Parts Manufacturing</div>
+    <div class="industry-tag">Other Miscellaneous Manufacturing</div>
+    <div class="industry-tag">Motor Vehicle Accessories</div>
+    <div class="industry-tag">Manufacturing Industries</div>
+    <div class="industry-tag">Special Trade Contractors</div>
+  </div>
+</section>
+
+
+
+<!-- Certification Highlights -->
+<section class="certificates">
+  <h2>Certificates</h2>
+  <div class="cert-badge-wall">
+    <img src="{% static 'images/cert1.png' %}" alt="ISO 9001">
+    <img src="{% static 'images/cert2.png' %}" alt="ISO 14001">
+    <img src="{% static 'images/cert3.png' %}" alt="RoHS">
+    <img src="{% static 'images/cert4.png' %}" alt="Quality assurance">
+  </div>
+</section>
+
+<!-- Our Process -->
+<section class="process-diagram">
+  <h2>Our Electroplating Process</h2>
+  <div class="diagram-container">
+    <div class="process-step">
+      <div class="icon">🧼</div>
+      <p>Surface Cleaning</p>
+    </div>
+    <div class="arrow">➔</div>
+    <div class="process-step">
+      <div class="icon">🧪</div>
+      <p>Pre-Treatment</p>
+    </div>
+    <div class="arrow">➔</div>
+    <div class="process-step">
+      <div class="icon">⚡</div>
+      <p>Electroplating</p>
+    </div>
+    <div class="arrow">➔</div>
+    <div class="process-step">
+      <div class="icon">💧</div>
+      <p>Rinsing</p>
+    </div>
+    <div class="arrow">➔</div>
+    <div class="process-step">
+      <div class="icon">✔️</div>
+      <p>Quality Check</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Testimonials -->
+<section class="testimonials">
+  <h2>Client Testimonials</h2>
+  <div class="testimonial">
+    <p>"Excellent quality and timely delivery. Highly professional team!"</p>
+    <h5>- Kirloskar Filter</h5>
+  </div>
+  <div class="testimonial">
+    <p>"Their barrel plating is unmatched. We trust them for all our components."</p>
+    <h5>- Bajaj Auto</h5>
+  </div>
+</section>
+{% endblock %}

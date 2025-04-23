@@ -1,0 +1,11 @@
+function closePopup() {
+    document.getElementById("thankyouPopup").style.display = "none";
+  }
+  
+  window.onload = function () {
+    const popup = document.getElementById("thankyouPopup");
+    if (popup && popup.dataset.show === "true") {
+      popup.style.display = "flex";
+    }
+  };
+  

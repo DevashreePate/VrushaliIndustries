@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Services{% endblock %}
+{% block content %}
+<section class="services-section">
+    <div class="container">
+        <h2>⚙️ Our Services</h2>
+
+        <div class="service-card">
+            <h3>🧪 Zinc Plating</h3>
+            <p>
+                Zinc plating is a widely used process that provides excellent corrosion resistance and a smooth, bright finish. Ideal for automotive, electronics, and hardware components, our zinc plating services ensure superior surface protection and durability. We offer both clear and yellow passivation options to meet specific industry requirements.
+            </p>
+            <p>
+                With automated controls and thorough quality checks, we ensure uniform coating, adhesion, and long-lasting results. Whether it’s bolts, fasteners, or precision components — we deliver flawless finishes with quick turnaround times.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>🔁 Vatt Line Plating</h3>
+            <p>
+                Our Vatt Line plating setup is designed for medium to large-sized components requiring customized treatment. With dedicated tanks, efficient handling systems, and real-time monitoring, we deliver high-performance coatings with minimal variation.
+            </p>
+            <p>
+                This line is ideal for components that require intricate plating processes or special handling. It provides flexibility for various metals and finishes while maintaining high consistency and low rejection rates.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>🔩 Barrel Line Plating</h3>
+            <p>
+                Perfect for mass production, our Barrel Line plating is used to process large quantities of small parts efficiently. The rotating barrels allow thorough coverage while minimizing handling damage and maintaining high throughput.
+            </p>
+            <p>
+                We specialize in zinc barrel plating with excellent corrosion resistance, suitable for fasteners, washers, rivets, and electrical components. Our automated lines ensure speed, precision, and cost-efficiency without compromising on quality.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<section class="clients-section">
+    <h2>🏢 Our Esteemed Clients</h2>
+    <div class="clients-logos">
+        <div class="client-logo">
+            <img src="{% static 'images/bajaj-logo.png' %}" alt="Bajaj Auto">
+            <p>Bajaj Auto</p>
+        </div>
+        <div class="client-logo">
+            <img src="{% static 'images/kirloskar-logo.png' %}" alt="Kirloskar Filter">
+            <p>Kirloskar Filter</p>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
